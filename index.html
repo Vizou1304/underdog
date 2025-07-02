@@ -1,80 +1,112 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Underdog - Le MemeCoin Rebelle</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Underdog - MemeCoin of the Misfits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0d0d0d;
+      margin: 0;
+      padding: 0;
+      background-color: #ff0077;
+      font-family: 'Bangers', cursive;
       color: white;
-      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px;
     }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      width: 180px;
+      border-radius: 50%;
+      border: 5px solid #000;
+      margin-bottom: 30px;
+      animation: pop 1s ease-out;
+    }
+
     h1 {
-      font-size: 3em;
-      color: #ffcc00;
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #fff000;
     }
-    p {
-      font-size: 1.2em;
+
+    .tagline {
+      font-size: 1.5em;
+      color: #ffffff;
       margin-bottom: 30px;
     }
+
+    .quote {
+      background-color: #000;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #fff;
+      line-height: 1.6;
+    }
+
     .button {
-      background-color: #ffcc00;
+      background-color: #fff000;
       color: #000;
       padding: 15px 30px;
-      font-size: 1em;
+      font-size: 1.2em;
       border: none;
       border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
-      margin: 10px;
+      transition: transform 0.2s ease-in-out;
       display: inline-block;
+      margin-top: 30px;
     }
-    img {
-      width: 200px;
-      margin: 30px auto;
-      border-radius: 50%;
-      border: 4px solid #ffcc00;
+
+    .button:hover {
+      transform: scale(1.05);
     }
-    .contract {
-      margin-top: 40px;
-      font-size: 0.9em;
-      background: #222;
-      padding: 10px;
-      border-radius: 8px;
-      color: #aaa;
+
+    @keyframes pop {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>UNDERDOG</h1>
-  <p> Born with nothing. Destined for everything 🚀</p>
-  <img src="logo.png" alt="Underdog Logo" style="width:200px; border-radius: 50%; margin: 30px auto;" />
-  <div style="max-width: 600px; margin: 0 auto 40px; font-size: 1.1rem; line-height: 1.6;">
-  <p>He doesn’t have the size.<br>
-  He doesn’t have the skills.<br>
-  He doesn’t even know the rules.</p>
+  <div class="container">
+    <img src="logo.png" alt="Underdog Logo" class="logo" />
+    <h1>Underdog</h1>
+    <p class="tagline">Born with nothing. Destined for everything. 🚀</p>
 
-  <p>But one morning, he crawled out of the pond, with a plain mask and a strange certainty:</p>
+    <a href="#" class="button">Join the Rebellion</a>
 
-  <p><strong>They could try to stop him.</strong><br>
-  He’d keep going anyway.</p>
+    <div class="quote">
+      <p>He doesn’t have the size.<br>
+      He doesn’t have the skills.<br>
+      He doesn’t even know the rules.</p>
 
-  <p>He doesn’t look the part.<br>
-  He doesn’t have the résumé.</p>
+      <p>But one morning, he crawled out of the pond,<br>
+      with a plain mask and a strange certainty:</p>
 
-  <p><strong>But he’s got what it takes.</strong></p>
+      <p><strong>They could try to stop him.<br>
+      He’d keep going anyway.</strong></p>
 
-  <p><em>Something you can’t explain.<br>
-  Something that makes the Underdog win one day.</em></p>
-</div>
-    <a class="button" href="https://t.me/underdogcoin" target="_blank">Telegram</a>
-    <a class="button" href="https://x.com/underdogcoin" target="_blank">Twitter</a>
-    <a class="button" href="https://app.uniswap.org" target="_blank">Acheter</a>
-  </div>
-  <div class="contract">
-    Adresse du contrat : 0x1234567890abcdef1234567890abcdef12345678
+      <p>He doesn’t look the part.<br>
+      He doesn’t have the résumé.</p>
+
+      <p>But he’s got what it takes.<br>
+      Something you can’t explain.<br>
+      Something that makes the Underdog win one day.</p>
+    </div>
   </div>
 </body>
 </html>
