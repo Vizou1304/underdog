@@ -2,95 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Underdog - MemeCoin of the Misfits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Underdog</title>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
     body {
-  background-image: url('background.png'); /* nom du fichier image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  padding: 40px;
+      margin: 0;
+      background: #ff2b7d;
+      font-family: 'Bangers', cursive;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     .logo {
       width: 180px;
       border-radius: 50%;
       border: 5px solid #000;
-      margin-bottom: 30px;
-      animation: pop 1s ease-out;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px #000;
+      transition: transform 0.3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.1) rotate(-3deg);
     }
 
     h1 {
-      font-size: 3.5em;
-      margin-bottom: 10px;
-      color: #fff000;
+      font-size: 4em;
+      color: #ffff00;
+      margin: 0;
     }
 
     .tagline {
       font-size: 1.5em;
-      color: #ffffff;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .quote {
-      background-color: #000;
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 40px;
-      font-size: 1.2em;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    .button {
-      background-color: #fff000;
-      color: #000;
+    .cta-button {
+      background: #fff000;
+      color: black;
       padding: 15px 30px;
       font-size: 1.2em;
+      border-radius: 10px;
       border: none;
-      border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
       text-decoration: none;
-      transition: transform 0.2s ease-in-out;
-      display: inline-block;
-      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
     }
 
-    .button:hover {
+    .cta-button:hover {
       transform: scale(1.05);
     }
 
-    @keyframes pop {
-      from {
-        transform: scale(0.7);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
+    .quote {
+      background-color: black;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 50px;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .links a img {
+      width: 40px;
+      transition: transform 0.2s ease;
+    }
+
+    .links a img:hover {
+      transform: scale(1.2);
+    }
+
+    .contract {
+      background: #222;
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 1em;
+      word-break: break-all;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 1em;
+      color: #ffccff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="Underdog Logo" class="logo" />
+    <img src="head.png" alt="Underdog Logo" class="logo" />
     <h1>Underdog</h1>
     <p class="tagline">Born with nothing. Destined for everything. 🚀</p>
 
-    <a href="https://x.com/UdogSol" class="button join">Join the Rebellion 🚀</a>
-    
+    <a href="#" class="cta-button">Join the Rebellion</a>
+
     <div class="quote">
       <p>He doesn’t have the size.<br>
       He doesn’t have the skills.<br>
@@ -109,6 +130,27 @@
       Something you can’t explain.<br>
       Something that makes the Underdog win one day.</p>
     </div>
+
+    <div class="links">
+      <a href="https://t.me/underdog" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      </a>
+      <a href="https://x.com/underdog" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X (Twitter)">
+      </a>
+      <a href="https://dexscreener.com/" target="_blank">
+        <img src="https://cryptologos.cc/logos/uniswap-uni-logo.png" alt="Dexscreener">
+      </a>
+    </div>
+
+    <div class="contract">
+      <strong>$UNDERDOG Smart Contract:</strong><br>
+      0x1234567890abcdef1234567890abcdef12345678
+    </div>
+
+    <footer>
+      Made by outsiders. Built for the unexpected.
+    </footer>
   </div>
 </body>
 </html>
