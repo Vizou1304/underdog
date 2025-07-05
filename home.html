@@ -8,17 +8,20 @@
   <style>
     body {
       margin: 0;
-      background: #ff2b7d;
       font-family: 'Bangers', cursive;
       color: white;
       text-align: center;
       overflow-x: hidden;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
       padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent bg for readability */
+      border-radius: 20px;
     }
 
     .logo {
@@ -103,24 +106,7 @@
       color: #ffccff;
     }
   </style>
-  </head>
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
+</head>
 <body>
   <div class="container">
     <img src="logo.png" alt="Underdog Logo" class="logo" />
@@ -156,7 +142,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X (Twitter)">
       </a>
       <a href="https://dexscreener.com/" target="_blank">
-        <img src="dexscreener.png" alt="Dexscreener" class="social-icon" />
+        <img src="dexscreener.png" alt="Dexscreener">
       </a>
     </div>
 
