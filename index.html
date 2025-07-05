@@ -3,112 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Underdog - MemeCoin of the Misfits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <title>Underdog</title>
   <style>
     body {
-  background-image: url('background.png'); /* nom du fichier image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  padding: 40px;
+      background-color: #ff3377;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .logo {
-      width: 180px;
-      border-radius: 50%;
-      border: 5px solid #000;
-      margin-bottom: 30px;
-      animation: pop 1s ease-out;
-    }
-
-    h1 {
-      font-size: 3.5em;
-      margin-bottom: 10px;
-      color: #fff000;
-    }
-
-    .tagline {
-      font-size: 1.5em;
-      color: #ffffff;
-      margin-bottom: 30px;
-    }
-
-    .quote {
-      background-color: #000;
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 40px;
-      font-size: 1.2em;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    .button {
-      background-color: #fff000;
-      color: #000;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
-      border-radius: 8px;
+    .clickable-img {
+      width: 300px;
+      max-width: 90%;
       cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s ease-in-out;
-      display: inline-block;
-      margin-top: 30px;
+      transition: transform 0.2s ease;
     }
-
-    .button:hover {
+    .clickable-img:hover {
       transform: scale(1.05);
-    }
-
-    @keyframes pop {
-      from {
-        transform: scale(0.7);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Underdog Logo" class="logo" />
-    <h1>Underdog</h1>
-    <p class="tagline">Born with nothing. Destined for everything. 🚀</p>
-
-    <a href="https://x.com/rey_underdog" class="button join">Join the Rebellion 🚀</a>
-    
-    <div class="quote">
-      <p>He doesn’t have the size.<br>
-      He doesn’t have the skills.<br>
-      He doesn’t even know the rules.</p>
-
-      <p>But one morning, he crawled out of the pond,<br>
-      with a plain mask and a strange certainty:</p>
-
-      <p><strong>They could try to stop him.<br>
-      He’d keep going anyway.</strong></p>
-
-      <p>He doesn’t look the part.<br>
-      He doesn’t have the résumé.</p>
-
-      <p>But he’s got what it takes.<br>
-      Something you can’t explain.<br>
-      Something that makes the Underdog win one day.</p>
-    </div>
-  </div>
+  <a href="home.html">
+    <img src="head.png" alt="Enter" class="clickable-img" />
+  </a>
 </body>
 </html>
+
