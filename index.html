@@ -14,21 +14,56 @@
       align-items: center;
       height: 100vh;
     }
+
     .clickable-img {
       width: 300px;
       max-width: 90%;
       cursor: pointer;
       transition: transform 0.2s ease;
     }
-    .clickable-img:hover {
-      transform: scale(1.05);
+
+    .clickable-img.bounce {
+      animation: bounce 0.6s;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-15px);
+      }
+      60% {
+        transform: translateY(-8px);
+      }
     }
   </style>
 </head>
 <body>
-  <a href="home.html">
-    <img src="head.png" alt="Enter" class="clickable-img" />
+  <a href="home.html" id="img-link">
+    <img src="head.png" alt="Enter" class="clickable-img" id="underdog-head" />
   </a>
+
+  <script>
+    const head = document.getElementById('underdog-head');
+    const originalSrc = "head.png";
+    const winkSrc = "head-wink.png";
+
+    head.addEventListener('click', (e) => {
+      e.preventDefault(); // bloque la redirection immédiate
+
+      head.src = winkSrc;
+      head.classList.add('bounce');
+
+      setTimeout(() => {
+        head.src = originalSrc;
+        head.classList.remove('bounce');
+        // redirection vers la page d’accueil
+        window.location.href = "home.html";
+      }, 900);
+    });
+  </script>
 </body>
 </html>
+
 
