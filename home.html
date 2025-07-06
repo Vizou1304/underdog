@@ -10,19 +10,60 @@
       margin: 0;
       font-family: 'Bangers', cursive;
       color: white;
-      text-align: center;
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
     }
 
-    .logo {
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-small {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #000;
+    }
+
+    .logo-title {
+      font-size: 2em;
+      color: #ffff00;
+      margin: 0;
+    }
+
+    .socials {
+      display: flex;
+      gap: 20px;
+    }
+
+    .socials a img {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.2s ease;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .main-logo {
       width: 180px;
       border-radius: 50%;
       border: 5px solid #000;
@@ -31,7 +72,7 @@
       transition: transform 0.3s;
     }
 
-    .logo:hover {
+    .main-logo:hover {
       transform: scale(1.1) rotate(-3deg);
     }
 
@@ -66,28 +107,12 @@
     }
 
     .quote, .contract {
-      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 30px;
       border-radius: 20px;
       margin-top: 50px;
       font-size: 1.2em;
       line-height: 1.6;
-    }
-
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 60px;
-    }
-
-    .links a img {
-      width: 40px;
-      transition: transform 0.2s ease;
-    }
-
-    .links a img:hover {
-      transform: scale(1.2);
     }
 
     footer {
@@ -98,11 +123,27 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Underdog Logo" class="logo" />
-    <h1>Underdog</h1>
-    <p class="tagline">Born with nothing. Destined for everything. 🚀</p>
+  <header>
+    <div class="logo-area">
+      <img src="logo.png" alt="Logo" class="logo-small" />
+      <span class="logo-title">UNDERDOG</span>
+    </div>
+    <div class="socials">
+      <a href="https://t.me/UDOGunderdog" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      </a>
+      <a href="https://x.com/UdogSol" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X (Twitter)">
+      </a>
+      <a href="https://dexscreener.com/" target="_blank">
+        <img src="dexscreener.png" alt="Dexscreener">
+      </a>
+    </div>
+  </header>
 
+  <div class="container">
+    <img src="logo.png" alt="Underdog Logo" class="main-logo" />
+    <p class="tagline">Born with nothing. Destined for everything. 🚀</p>
     <a href="#" class="cta-button">Join the Rebellion</a>
 
     <div class="quote">
@@ -122,18 +163,6 @@
       <p>But he’s got what it takes.<br>
       Something you can’t explain.<br>
       Something that makes the Underdog win one day.</p>
-    </div>
-
-    <div class="links">
-      <a href="https://t.me/UDOGunderdog" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-      </a>
-      <a href="https://x.com/UdogSol" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X (Twitter)">
-      </a>
-      <a href="https://dexscreener.com/" target="_blank">
-        <img src="dexscreener.png" alt="Dexscreener" class="social-icon" />
-      </a>
     </div>
 
     <div class="contract">
