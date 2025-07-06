@@ -59,8 +59,13 @@
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: calc(100vh - 120px);
+      /* Ajusté pour tenir sous le header */
     }
 
     .main-logo {
@@ -84,14 +89,14 @@
 
     .tagline {
       font-size: 1.5em;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       color: #fff;
     }
 
     .cta-button {
       background: #fff000;
       color: black;
-      padding: 15px 30px;
+      padding: 12px 25px;
       font-size: 1.2em;
       border-radius: 10px;
       border: none;
@@ -99,6 +104,7 @@
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin: 20px 0;
       transition: transform 0.2s;
     }
 
@@ -109,15 +115,15 @@
     .quote,
     .contract {
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 30px;
+      padding: 20px;
       border-radius: 20px;
-      margin-top: 50px;
-      font-size: 1.2em;
+      margin-top: 20px;
+      font-size: 1.1em;
       line-height: 1.6;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 25px;
       font-size: 1em;
       color: #ffccff;
     }
