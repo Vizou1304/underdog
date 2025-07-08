@@ -11,8 +11,9 @@
       margin: 0;
       font-family: 'Baloo 2', cursive;
       color: white;
-      background: url('background.png') no-repeat center center fixed;
+      background: url('images/background.png') no-repeat center center;
       background-size: cover;
+      background-attachment: scroll;
       overflow-x: hidden;
     }
 
@@ -59,29 +60,8 @@
     .container {
       max-width: 900px;
       margin: -80px auto 0 auto;
-      /* <- valeur ajustable */
       padding: 20px 20px;
       text-align: center;
-    }
-
-
-    .main-logo {
-      width: 180px;
-      border-radius: 50%;
-      border: 5px solid #000;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px #000;
-      transition: transform 0.3s;
-    }
-
-    .main-logo:hover {
-      transform: scale(1.1) rotate(-3deg);
-    }
-
-    h1 {
-      font-size: 4em;
-      color: #ffff00;
-      margin: 0;
     }
 
     .tagline {
@@ -119,6 +99,35 @@
       line-height: 1.6;
     }
 
+    .gallery {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2.5em;
+      color: #fff000;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       margin-top: 30px;
       font-size: 0.9em;
@@ -130,8 +139,8 @@
 <body>
   <header>
     <div class="logo-area">
-      <img src="logo.png" alt="Logo" class="logo-small" />
-      <img src="Titre.png" alt="UNDERDOG" class="logo-title-img" />
+      <img src="images/logo.png" alt="Logo" class="logo-small" />
+      <img src="images/Titre.png" alt="UNDERDOG" class="logo-title-img" />
     </div>
     <div class="socials">
       <a href="https://t.me/UDOGunderdog" target="_blank">
@@ -141,7 +150,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="X (Twitter)">
       </a>
       <a href="https://dexscreener.com/" target="_blank">
-        <img src="dexscreener.png" alt="Dexscreener">
+        <img src="images/dexscreener.png" alt="Dexscreener">
       </a>
     </div>
   </header>
@@ -172,6 +181,15 @@
     <div class="contract">
       <strong>$UNDERDOG Smart Contract:</strong><br>
       0x1234567890abcdef1234567890abcdef12345678
+    </div>
+
+    <div class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/gallery1.png" alt="Underdog moment 1">
+        <img src="images/gallery2.png" alt="Underdog moment 2">
+        <img src="images/gallery3.png" alt="Underdog moment 3">
+      </div>
     </div>
 
     <footer>
