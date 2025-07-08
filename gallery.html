@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Underdog - Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Baloo 2', cursive;
+            background: url('images/background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff000;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 0 20px 40px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        a.back {
+            display: inline-block;
+            margin-top: 20px;
+            color: #fff000;
+            font-size: 1.2em;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Underdog Gallery</h1>
+    </header>
+
+    <div class="gallery-grid">
+        <img src="images/gallery-1.png" alt="Art 1">
+        <img src="images/gallery-2.png" alt="Art 2">
+        <img src="images/gallery-3.png" alt="Art 3">
+        <img src="images/gallery4.png" alt="Art 4">
+        <img src="images/gallery5.png" alt="Art 5">
+        <!-- Ajoute plus d’images ici -->
+    </div>
+
+    <a href="index.html" class="back">← Back to home</a>
+</body>
+
+</html>
